@@ -35,6 +35,28 @@ def instruction():
     ''')
 
 
+
+# Checks that users enter an integer
+# that is more than 13
+def int_check():
+
+    while True:
+
+        error = "Please enter an integer that is 13 or more"
+
+        try:
+
+            response = int(input("Enter an integer"))
+
+            if response < 13:
+                print(error)
+            else:
+                return response
+
+        except ValueError:
+            print(error)
+
+
 print("🎲🎲 Roll it 13 🎲🎲")
 
 want_instructions = yes_no("Do you want to read the instructions? ")
