@@ -23,4 +23,4 @@ def int_check():
 
 # main routine goes here
 target_score = int_check()
-print(targe_score)
+print(target_score)

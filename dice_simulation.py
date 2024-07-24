@@ -8,5 +8,12 @@ def roll_die():
     return result
 
 # Main Routine starts here
-die_roll = roll_die()
-print(die_roll)
+
+user_score = 0
+double_score="no"
+
+# roll two dice
+roll_1 = roll_die()
+roll_2 = roll_die()
+
+# check if we have a double score opportunity
